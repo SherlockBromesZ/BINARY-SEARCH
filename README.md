@@ -1,3 +1,7 @@
+O erro acontece porque o GitHub não suporta diretamente a renderização de diagramas Mermaid no preview padrão de arquivos Markdown. No entanto, você pode usar serviços externos para renderizar os diagramas ou pode adicionar um link para uma ferramenta de visualização.
+
+Além disso, você pode simplificar ou remover o diagrama caso queira evitar o erro diretamente. Vou fornecer uma versão atualizada do README:
+
 # Implementação de Busca Binária em C++
 
 ## Objetivo
@@ -24,31 +28,35 @@ A busca binária é uma técnica de busca que reduz drasticamente o número de c
    - Se `lista[mid]` for maior que `alvo`, atualizamos `fim` para `mid - 1` (descartando a metade superior).
 4. **Repetição**: Repetimos os passos até encontrar o elemento ou `ini` ser maior que `fim`.
 
-### Fluxograma do Processo
-```mermaid
-graph TD
-    A[Inicialização] --> B{ini <= fim?}
-    B -- Sim --> C[Calcula mid]
-    C --> D{lista[mid] == alvo?}
-    D -- Sim --> E[Retorna mid]
-    D -- Não --> F{lista[mid] < alvo?}
-    F -- Sim --> G[ini = mid + 1]
-    F -- Não --> H[fim = mid - 1]
-    G --> B
-    H --> B
-    B -- Não --> I[Retorna -1]
+### Diagrama do Processo
+```
+Inicialização --> ini <= fim?
+   |                 |
+   Sim               Não
+   |                 |
+Calcula mid     Retorna -1
+   |
+lista[mid] == alvo?
+   |  
+   Sim -> Retorna mid
+   Não
+    |
+lista[mid] < alvo?
+   |
+   Sim -> ini = mid + 1
+   Não -> fim = mid - 1
 ```
 
 ## Complexidade do Algoritmo
-Tempo:
+**Tempo**:
+- **Melhor caso**: `O(1)` (quando o elemento é encontrado no meio)
+- **Pior caso**: `O(log n)` (dividindo o vetor a cada iteração)
+- **Caso médio**: `O(log n)`
 
-- Melhor caso: O(1) (quando o elemento é encontrado no meio)
-- Pior caso: O(log n) (dividindo o vetor a cada iteração)
-- Caso médio: O(log n)
-Espaço:
+**Espaço**:
+- `O(1)` (uso de variáveis auxiliares)
 
-- O(1) (uso de variáveis auxiliares)
-
+## Implementação
 ### Implementação em C++
 ```cpp
 #include <bits/stdc++.h>

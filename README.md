@@ -37,6 +37,7 @@ graph TD
     G --> B
     H --> B
     B -- Não --> I[Retorna -1]
+```
 Complexidade do Algoritmo
 Tempo:
 
@@ -47,7 +48,7 @@ Espaço:
 
 O(1) (uso de variáveis auxiliares)
 Implementação
-
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -82,3 +83,4 @@ int main() {
     }
     return 0;
 }
+```

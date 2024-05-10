@@ -86,13 +86,3 @@ int main() {
     return 0;
 }
 ```
-
-## Como Executar
-Para executar o código, basta compilá-lo e executar o binário gerado.
-
-## Referências
-- [Wikipedia - Busca Binária](https://en.wikipedia.org/wiki/Binary_search_algorithm)
-- [GeeksforGeeks - Binary Search in C++](https://www.geeksforgeeks.org/binary-search/)
-```
-
-Agora o seu Markdown está completo e formatado corretamente!

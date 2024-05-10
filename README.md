@@ -1,3 +1,6 @@
+Claro! Aqui está o seu Markdown completo, incluindo todas as seções corrigidas:
+
+```markdown
 # Implementação de Busca Binária em C++
 
 ## Objetivo
@@ -38,16 +41,18 @@ graph TD
     H --> B
     B -- Não --> I[Retorna -1]
 ```
-Complexidade do Algoritmo
+
+## Complexidade do Algoritmo
 Tempo:
 
-Melhor caso: O(1) (quando o elemento é encontrado no meio)
-Pior caso: O(log n) (dividindo o vetor a cada iteração)
-Caso médio: O(log n)
+- Melhor caso: O(1) (quando o elemento é encontrado no meio)
+- Pior caso: O(log n) (dividindo o vetor a cada iteração)
+- Caso médio: O(log n)
 Espaço:
 
-O(1) (uso de variáveis auxiliares)
-Implementação
+- O(1) (uso de variáveis auxiliares)
+
+### Implementação em C++
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -84,3 +89,13 @@ int main() {
     return 0;
 }
 ```
+
+## Como Executar
+Para executar o código, basta compilá-lo e executar o binário gerado.
+
+## Referências
+- [Wikipedia - Busca Binária](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- [GeeksforGeeks - Binary Search in C++](https://www.geeksforgeeks.org/binary-search/)
+```
+
+Agora o seu Markdown está completo e formatado corretamente!

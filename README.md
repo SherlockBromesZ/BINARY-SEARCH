@@ -1,6 +1,3 @@
-Claro! Aqui está o seu Markdown completo, incluindo todas as seções corrigidas:
-
-```markdown
 # Implementação de Busca Binária em C++
 
 ## Objetivo
